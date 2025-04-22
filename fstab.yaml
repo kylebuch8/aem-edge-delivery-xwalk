@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p63456-e1446619.adobeaemcloud.com/bin/franklin.delivery/kylebuch8/aem-edge-delivery-xwalk/main"
+    url: "https://author-p63456-e531326.adobeaemcloud.com/bin/franklin.delivery/kylebuch8/aem-edge-delivery-xwalk/main"
     type: "markup"
     suffix: ".html"
