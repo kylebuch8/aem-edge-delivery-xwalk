@@ -14,6 +14,12 @@ export default function decorate(block) {
       else div.className = 'cards-card-body';
     });
     ul.append(li);
+
+    const rhCard = document.createElement('rh-card');
+    const para = document.createElement('p');
+    para.innerText = 'This is an rh-card.';
+    rhCard.appendChild(para);
+    ul.appendChild(rhCard);
   });
   ul.querySelectorAll('picture > img').forEach((img) => {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
