@@ -1,6 +1,5 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
-import "@rhds/elements/rh-card/rh-card.js";
 
 export default function decorate(block) {
   /* change to ul, li */
