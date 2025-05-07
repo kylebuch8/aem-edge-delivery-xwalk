@@ -12,9 +12,22 @@ export default async function decorate(block) {
 
   [...block.children].forEach((row) => {
     moveInstrumentation(row, card);
-    while (row.firstElementChild) card.append(row.firstElementChild);
+    while (row.firstElementChild.firstElementChild) {
+      card.append(row.firstElementChild.firstElementChild);
+    }
+    
+    [...card.children].forEach((element) => {
+      if (element.tagName.toLocaleLowerCase() === 'picture') {
+        element.setAttribute('slot', 'image');
+      }
+
+      if (element.tagName.toLocaleLowerCase() === 'h1') {
+        element.setAttribute('slot', 'header');
+      }
+    });
   });
 
   block.textContent = '';
+  block.setAttribute('full-width', '');
   block.append(card);
 }
