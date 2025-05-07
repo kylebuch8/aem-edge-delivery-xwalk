@@ -18,6 +18,6 @@ module.exports = {
     'import/extensions': ['error', { js: 'always' }], // require js file extensions in imports
     'linebreak-style': ['error', 'unix'], // enforce unix linebreaks
     'no-param-reassign': [2, { props: false }], // allow modifying properties of param
-    'import/no-unresolved': [2, { ignore: ['^@rhds/'] }],
+    'import/no-unresolved': [2, { ignore: ['^@rhds/'] }], // allow use of @rhds bare module specifier
   },
 };
