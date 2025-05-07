@@ -15,7 +15,7 @@ export default async function decorate(block) {
     while (row.firstElementChild.firstElementChild) {
       card.append(row.firstElementChild.firstElementChild);
     }
-    
+
     [...card.children].forEach((element) => {
       if (element.tagName.toLocaleLowerCase() === 'picture') {
         element.setAttribute('slot', 'image');
