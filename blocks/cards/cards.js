@@ -10,8 +10,8 @@ export default function decorate(block) {
 
       if (picture) {
         card.classList.add('image');
-        picture.setAttribute("slot", "header");
-        card.appendChild(picture)
+        picture.setAttribute('slot', 'header');
+        card.appendChild(picture);
       } else {
         while (child.firstElementChild) card.append(child.firstElementChild);
       }
