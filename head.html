@@ -2,7 +2,8 @@
 <script type="importmap">
   {
     "imports": {
-      "@rhds/elements/": "https://unpkg.com/@rhds/elements@3.0.1/elements/"
+      "@rhds/elements/": "https://unpkg.com/@rhds/elements@3.0.1/elements/",
+      "@rhds/icons/": "https://unpkg.com/@rhds/icons@1.2.0/"
     },
     "scopes": {
       "https://unpkg.com/": {
@@ -34,9 +35,17 @@
     }
   }
 </script>
+<script type="module">
+  import "@rhds/elements/rh-navigation-primary/rh-navigation-primary.js";
+  import "@rhds/elements/rh-footer/rh-footer.js";
+  import "@rhds/elements/rh-card/rh-card.js";
+  import "@rhds/elements/rh-cta/rh-cta.js";
+</script>
 <script src="/scripts/aem.js" type="module"></script>
 <script src="/scripts/scripts.js" type="module"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&family=Red+Hat+Text:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/@rhds/elements@3.0.1/elements/rh-navigation-primary/rh-navigation-primary-lightdom.css">
+<link rel="stylesheet" href="https://unpkg.com/@rhds/elements@3.0.1/elements/rh-footer/rh-footer-lightdom.css">
 <link rel="stylesheet" href="/styles/styles.css"/>
-<script type="module">
-  import "@rhds/elements/rh-card/rh-card.js";
-</script>
