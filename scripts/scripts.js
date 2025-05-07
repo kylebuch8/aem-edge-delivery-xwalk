@@ -12,6 +12,11 @@ import {
   loadCSS,
 } from './aem.js';
 
+import "@rhds/elements/rh-navigation-primary/rh-navigation-primary.js";
+import "@rhds/elements/rh-footer/rh-footer.js";
+import "@rhds/elements/rh-card/rh-card.js";
+import "@rhds/elements/rh-cta/rh-cta.js";
+
 /**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from
