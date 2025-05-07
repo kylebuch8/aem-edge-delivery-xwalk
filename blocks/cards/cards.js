@@ -1,14 +1,11 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
-import { moveInstrumentation } from '../../scripts/scripts.js';
-
 export default function decorate(block) {
   const div = document.createElement('div');
   div.classList.add('card-grid');
 
-  [...block.children].forEach(row => {
+  [...block.children].forEach((row) => {
     const card = document.createElement('rh-card');
 
-    [...row.children].forEach(child => {
+    [...row.children].forEach((child) => {
       const picture = child.querySelector('picture') || null;
 
       if (picture) {
