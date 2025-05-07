@@ -2,6 +2,7 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 import '@rhds/elements/rh-footer/rh-footer.js';
+import '@rhds/elements/rh-cta/rh-cta.js';
 
 /**
  * loads and decorates the footer
