@@ -14,7 +14,7 @@ export default async function decorate(block) {
     moveInstrumentation(row, card);
     while (row.firstElementChild) card.append(row.firstElementChild);
   });
-  
+
   block.textContent = '';
   block.append(card);
 }
