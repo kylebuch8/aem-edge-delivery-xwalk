@@ -40,6 +40,12 @@
           "value": "",
           "label": "Text",
           "valueType": "string"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "color-palette",
+          "label": "Color palette"
         }
       ]
     }
