@@ -214,10 +214,35 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "valueType": "string",
+        "component": "select",
         "name": "color-palette",
-        "label": "Color palette"
+        "label": "Color palette",
+        "options": [
+          {
+            "name": "Lightest",
+            "value": "lightest"
+          },
+          {
+            "name": "Lighter",
+            "value": "lighter"
+          },
+          {
+            "name": "Light",
+            "value": "light"
+          },
+          {
+            "name": "Dark",
+            "value": "dark"
+          },
+          {
+            "name": "Darker",
+            "value": "darker"
+          },
+          {
+            "name": "Darkest",
+            "value": "darkest"
+          }
+        ]
       }
     ]
   },
