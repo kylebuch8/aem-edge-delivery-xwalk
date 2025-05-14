@@ -6,6 +6,33 @@
     ]
   },
   {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "fragment"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "fragment",
+      "teaser"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
@@ -37,8 +64,7 @@
       "cards",
       "columns",
       "fragment",
-      "teaser",
-      "call-to-action"
+      "teaser"
     ]
   }
 ]
