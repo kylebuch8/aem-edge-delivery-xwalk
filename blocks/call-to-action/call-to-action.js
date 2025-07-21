@@ -3,7 +3,7 @@ import '@rhds/elements/rh-cta/rh-cta.js';
 const VARIANTS = {
   default: '',
   primary: 'primary',
-  secondary: 'secondary',  
+  secondary: 'secondary',
 };
 
 export default function decorate(block) {
@@ -11,14 +11,12 @@ export default function decorate(block) {
   const cta = document.createElement('rh-cta');
   cta.appendChild(link);
 
-  for (const cls of link.classList) {
-    if (VARIANTS[cls]) {
-      cta.setAttribute('variant', VARIANTS[cls]);
-      break;
-    }
+  const matchingVariant = Array.from(link.classList).find((cls) => VARIANTS[cls]);
+  if (matchingVariant) {
+    cta.setAttribute('variant', VARIANTS[matchingVariant]);
   }
 
-  link.classList.remove('button'); 
+  link.classList.remove('button');
 
   block.textContent = '';
   block.append(cta);
