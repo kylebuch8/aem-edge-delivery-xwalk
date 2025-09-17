@@ -289,5 +289,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "tile",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "headline",
+        "label": "Headline",
+        "required": true
+      }
+    ]
   }
 ]
