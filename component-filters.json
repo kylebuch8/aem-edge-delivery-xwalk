@@ -15,7 +15,9 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "teaser",
+      "tile"
     ]
   },
   {
@@ -29,7 +31,8 @@
       "cards",
       "columns",
       "fragment",
-      "teaser"
+      "teaser",
+      "tile"
     ]
   },
   {
@@ -64,7 +67,8 @@
       "cards",
       "columns",
       "fragment",
-      "teaser"
+      "teaser",
+      "tile"
     ]
   }
 ]
