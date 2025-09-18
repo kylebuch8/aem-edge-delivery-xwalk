@@ -1,34 +1,47 @@
 {
-    "definitions": [
-        {
-            "title": "Tile",
-            "id": "tile",
-            "plugins": {
-                "xwalk": {
-                    "page": {
-                        "resourceType": "core/franklin/components/block/v1/block",
-                        "template": {
-                            "name": "Tile",
-                            "model": "tile"
-                        }
-                    }
-                }
+  "definitions": [
+    {
+      "title": "Tile",
+      "id": "tile",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Tile",
+              "model": "tile"
             }
+          }
         }
-    ],
-    "models": [
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "tile",
+      "fields": [
         {
-            "id": "tile",
-            "fields": [
-                {
-                    "component": "text",
-                    "valueType": "string",
-                    "name": "headline",
-                    "label": "Headline",
-                    "required": true
-                }
-            ]
+          "component": "text",
+          "valueType": "string",
+          "name": "headline",
+          "label": "Headline",
+          "required": true
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "body",
+          "label": "Body"
+        },
+        {
+          "component": "link",
+          "valueType": "string",
+          "name": "link",
+          "label": "Link",
+          "required": true
         }
-    ],
-    "filters": []
+      ]
+    }
+  ],
+  "filters": []
 }

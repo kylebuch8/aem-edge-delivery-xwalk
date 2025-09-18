@@ -299,6 +299,19 @@
         "name": "headline",
         "label": "Headline",
         "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "body",
+        "label": "Body"
+      },
+      {
+        "component": "link",
+        "valueType": "string",
+        "name": "link",
+        "label": "Link",
+        "required": true
       }
     ]
   }
