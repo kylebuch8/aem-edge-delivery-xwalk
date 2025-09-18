@@ -34,10 +34,21 @@
           "required": true
         },
         {
-          "component": "boolean",
-          "valueType": "boolean",
+          "component": "select",
+          "valueType": "string",
+          "value": "",
           "name": "compact",
-          "label": "Compact"
+          "label": "Compact",
+          "options": [
+            {
+              "name": "Default",
+              "value": ""
+            },
+            {
+              "name": "Compact",
+              "value": "compact"
+            }
+          ]
         }
       ]
     }
