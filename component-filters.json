@@ -27,6 +27,15 @@
     ]
   },
   {
+    "id": "tile",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",

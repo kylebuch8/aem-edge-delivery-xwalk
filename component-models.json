@@ -294,7 +294,7 @@
     "id": "tile",
     "fields": [
       {
-        "component": "text",
+        "component": "title",
         "valueType": "string",
         "name": "headline",
         "label": "Headline",
