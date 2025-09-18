@@ -1,5 +1,6 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 import '@rhds/elements/rh-card/rh-card.js';
+import '@rhds/elements/rh-cta/rh-cta.js';
 
 /**
  * loads and decorates the footer
@@ -23,6 +24,13 @@ export default async function decorate(block) {
 
       if (element.tagName.toLocaleLowerCase() === 'h1') {
         element.setAttribute('slot', 'header');
+      }
+
+      if (element.classList.contains('button-container')) {
+        const cta = document.createElement('rh-cta');
+        cta.href = element.firstElementChild.href;
+        cta.textContent = element.firstElementChild.textContent;
+        element.replaceChild(cta, element.firstElementChild);
       }
     });
   });

@@ -4,6 +4,7 @@ import { loadFragment } from '../fragment/fragment.js';
 import '@rhds/elements/rh-navigation-primary/rh-navigation-primary.js';
 import '@rhds/elements/rh-avatar/rh-avatar.js';
 import '@rhds/elements/rh-button/rh-button.js';
+import '@rhds/elements/rh-scheme-toggle/rh-scheme-toggle.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
@@ -446,6 +447,9 @@ export default async function decorate(block) {
           </div>
           <div class="logout">
             <rh-button danger>Log out</rh-button>
+          </div>
+          <div class="scheme-toggle">
+            <rh-scheme-toggle></rh-scheme-toggle>
           </div>
         </div>
       </div>
