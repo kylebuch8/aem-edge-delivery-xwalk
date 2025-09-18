@@ -307,7 +307,7 @@
         "label": "Body"
       },
       {
-        "component": "link",
+        "component": "text",
         "valueType": "string",
         "name": "link",
         "label": "Link",
