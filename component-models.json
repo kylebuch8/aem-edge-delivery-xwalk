@@ -292,14 +292,26 @@
   },
   {
     "id": "tile",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "text",
-        "label": "Text",
-        "required": true
-      }
-    ]
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Title"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Text",
+          "required": true
+        },
+        {
+          "component": "boolean",
+          "valueType": "boolean",
+          "name": "compact",
+          "label": "Compact"
+        }
+      ]
   }
 ]
