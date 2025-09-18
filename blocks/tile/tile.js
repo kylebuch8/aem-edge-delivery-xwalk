@@ -4,6 +4,10 @@ import '@rhds/elements/rh-tile/rh-tile.js';
 export default function decorate(block) {
   const tile = document.createElement('rh-tile');
 
+  if (block.classList.contains('compact')) {
+    tile.setAttribute('compact', '');
+  }
+
   [...block.children].forEach((child) => {
     moveInstrumentation(child, tile);
     while (child.firstElementChild.firstElementChild) {
