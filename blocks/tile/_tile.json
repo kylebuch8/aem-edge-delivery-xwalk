@@ -37,7 +37,7 @@
           "component": "select",
           "valueType": "string",
           "value": "",
-          "name": "compact",
+          "name": "classes",
           "label": "Compact",
           "options": [
             {
