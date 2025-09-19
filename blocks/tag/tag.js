@@ -5,16 +5,20 @@ export default function decorate(block) {
   const tag = document.createElement('rh-tag');
 
   if (block.classList.contains('size-compact')) {
-    tag.setAttribute('compact', '');
+    tag.setAttribute('size', 'compact');
   }
 
-  [...block.children].forEach((child) => {
-    moveInstrumentation(child, tag);
-    while (child.firstElementChild.firstElementChild) {
-      tag.append(child.firstElementChild.firstElementChild);
+  Array.from(block.classList).forEach((className) => {
+    if (className.startsWith('color-')) {
+      tag.setAttribute('color', className.replace('color-', ''));
     }
   });
 
-  block.textContent = '';
-  block.append(tag);
+  [...block.children].forEach((child) => {
+    moveInstrumentation(child, tag);
+    tag.textContent = child.firstElementChild.firstElementChild.textContent;
+  });
+
+  // get rid of the wrapper
+  block.parentElement.replaceWith(tag);
 }

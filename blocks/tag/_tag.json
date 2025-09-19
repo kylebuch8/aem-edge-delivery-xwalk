@@ -66,6 +66,12 @@
                 "value": "size-compact"
               }
             ]
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "href",
+            "label": "Link"
           }
         ]
       }
