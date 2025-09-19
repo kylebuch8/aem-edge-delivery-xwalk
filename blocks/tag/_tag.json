@@ -27,59 +27,42 @@
             "label": "Text"
           },
           {
-            "component": "select",
-            "valueType": "string",
+            "component": "multiselect",
+            "valueType": "string[]",
             "value": "",
             "name": "classes",
-            "label": "Color",
+            "label": "Options",
             "options": [
               {
-                "name": "Default",
-                "value": ""
-              },
-              {
-                "name": "Red",
+                "name": "Color: Red",
                 "value": "color-red"
               },
               {
-                "name": "Orange",
+                "name": "Color: Orange",
                 "value": "color-orange"
               },
               {
-                "name": "Green",
+                "name": "Color: Green",
                 "value": "color-green"
               },
               {
-                "name": "Cyan",
+                "name": "Color: Cyan",
                 "value": "color-cyan"
               },
               {
-                "name": "Blue",
+                "name": "Color: Blue",
                 "value": "color-blue"
               },
               {
-                "name": "Purple",
+                "name": "Color: Purple",
                 "value": "color-purple"
               },
               {
-                "name": "Gray",
+                "name": "Color: Gray",
                 "value": "color-gray"
-              }
-            ]
-          },
-          {
-            "component": "select",
-            "valueType": "string",
-            "value": "",
-            "name": "classes",
-            "label": "Size",
-            "options": [
-              {
-                "name": "Default",
-                "value": ""
               },
               {
-                "name": "Compact",
+                "name": "Size: Compact",
                 "value": "size-compact"
               }
             ]
