@@ -16,7 +16,8 @@ export default function decorate(block) {
 
   [...block.children].forEach((child) => {
     moveInstrumentation(child, tag);
-    tag.textContent = child.firstElementChild.firstElementChild.textContent;
+    tag.append(row.firstElementChild.firstElementChild);
+    // tag.textContent = child.firstElementChild.firstElementChild.textContent;
   });
 
   block.textContent = '';
