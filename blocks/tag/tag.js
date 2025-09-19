@@ -19,6 +19,6 @@ export default function decorate(block) {
     tag.textContent = child.firstElementChild.firstElementChild.textContent;
   });
 
-  // get rid of the wrapper
-  block.parentElement.replaceWith(tag);
+  block.textContent = '';
+  block.append(tag);
 }
