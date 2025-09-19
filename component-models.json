@@ -253,6 +253,75 @@
     ]
   },
   {
+    "id": "tag",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "label": "Text"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "value": "",
+        "name": "classes",
+        "label": "Color",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Red",
+            "value": "color-red"
+          },
+          {
+            "name": "Orange",
+            "value": "color-orange"
+          },
+          {
+            "name": "Green",
+            "value": "color-green"
+          },
+          {
+            "name": "Cyan",
+            "value": "color-cyan"
+          },
+          {
+            "name": "Blue",
+            "value": "color-blue"
+          },
+          {
+            "name": "Purple",
+            "value": "color-purple"
+          },
+          {
+            "name": "Gray",
+            "value": "color-gray"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "value": "",
+        "name": "classes",
+        "label": "Size",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Compact",
+            "value": "size-compact"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "teaser",
     "fields": [
       {
@@ -292,37 +361,37 @@
   },
   {
     "id": "tile",
-      "fields": [
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "title",
-          "label": "Title"
-        },
-        {
-          "component": "richtext",
-          "valueType": "string",
-          "name": "text",
-          "label": "Text",
-          "required": true
-        },
-        {
-          "component": "select",
-          "valueType": "string",
-          "value": "",
-          "name": "classes",
-          "label": "Compact",
-          "options": [
-            {
-              "name": "Default",
-              "value": ""
-            },
-            {
-              "name": "Compact",
-              "value": "compact"
-            }
-          ]
-        }
-      ]
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Text",
+        "required": true
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "value": "",
+        "name": "classes",
+        "label": "Compact",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Compact",
+            "value": "compact"
+          }
+        ]
+      }
+    ]
   }
 ]
