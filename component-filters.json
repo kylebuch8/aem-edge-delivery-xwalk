@@ -6,9 +6,9 @@
     ]
   },
   {
-    "id": "cards",
+    "id": "aem-cards",
     "components": [
-      "card"
+      "aem-card"
     ]
   },
   {
@@ -39,7 +39,8 @@
       "fragment",
       "teaser",
       "tag",
-      "tile"
+      "tile",
+      "card"
     ]
   }
 ]
