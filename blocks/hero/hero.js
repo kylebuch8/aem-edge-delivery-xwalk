@@ -30,6 +30,7 @@ export default async function decorate(block) {
         const cta = document.createElement('rh-cta');
         cta.href = element.firstElementChild.href;
         cta.textContent = element.firstElementChild.textContent;
+        cta.setAttribute('variant', 'primary');
         element.replaceChild(cta, element.firstElementChild);
       }
     });
