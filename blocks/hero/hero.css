@@ -1,3 +1,9 @@
+.hero-container {
+  & .hero-wrapper {
+    max-width: initial;
+  }
+}
+
 .hero.block[full-width] {
   background-color: light-dark(var(--rh-color-surface-light, #e0e0e0), var(--rh-color-surface-dark, #383838));
   container: full-width / inline-size;
