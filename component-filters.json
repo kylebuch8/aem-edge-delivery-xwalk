@@ -12,6 +12,12 @@
     ]
   },
   {
+    "id": "tiles",
+    "components": [
+      "tile"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"
