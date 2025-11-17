@@ -238,6 +238,21 @@
           }
         },
         {
+          "title": "Tiles Item",
+          "id": "tiles-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Tiles Item",
+                  "model": "tiles-item"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Tile",
           "id": "tile",
           "plugins": {
