@@ -23,7 +23,10 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "tile",
+      "tag",
+      "card"
     ]
   },
   {
